@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta characterset="utf-8">
+  <title>Air Quiz Type 1</title>
+  <link rel="stylesheet" href="../index.css">
+  <script src="../quis.js"></script>
+</head>
+
+<body>
+  <h1>Airport Name　->　Airport Code</h1>
+  <h3>　</h3>
+  <form autocomplete="off">
+    <h3>以下の空港の空港コードを答えよ!!<br>Answer the Airport Code!</h3>
+    <input type="button" value="Generate Question" onclick="gen()">
+    <h3>　</h3>
+    <h1 id ="QuestionType1" style="padding: 10px; border: 8px solid rgba(47, 241, 183, 0.92);">「Generate Question」を押してね<br>Please push "Generate Question"</h1>
+  <h2></h2>
+  <h1>　</h1>
+    <h3>下にIATAコードを半角大文字で入力して,「Check」を押してね.<br>Enter the IATA code below in single-byte capital letters and push "Check" please.</h3>
+    <input type="text" id="CodeAns" value="">
+    <input type="text" name="dummy" style="display:none;">
+    <input type="button" value="Check" onclick="codeans()">
+    <h3 id="Bottom"></h3>
+    <video id="Result" style="width: 90%; padding: 10px;" autoplay muted></video>
+    <h3>　</h3>
+    <div class="main">
+      <h1>解答　Answer</h1>
+      <table>
+        <tr>
+          <td>空港名<br>Airport Name</td>
+         <th id="AnsName">　　　</th>
+        </tr>
+        <tr>
+          <td>空港コード<br>Airport Code</td>
+          <th id="AnsCode">　　　</th>
+        </tr>
+        <tr>
+          <td rowspan="2">空港の場所<br>Airport Location</td>
+          <th id="AnsLoc">　　　</th>
+        </tr>
+        <tr>
+          <th><img id="AnsMap" style="width: 30%"></th>
+        </tr>
+      </table>
+    </div>
+    <p>　</p>
+    <div class="main">
+      <h1>あなたの解答　Your Answer</h1>
+      <table>
+        <tr>
+            <td>空港名<br>Airport Name</td>
+            <th id="YourName">　　　</th>
+        </tr>
+        <tr>
+          <td>空港コード<br>Airport Code</td>
+          <th id="YourCode">　　　</th>
+        </tr>
+        <tr>
+          <td rowspan="2">空港の場所<br>Airport Location</td>
+          <th id="YourLoc">　　　</th>
+        </tr>
+        <tr>
+          <th><img id="YourMap" style="width: 30%"></th>
+        </tr>
+      </table>
+    </div>
+    <p>　　　</p>
+    <input type="button" value="Try Again" onclick="gen()">
+  </form>
+
+  <h1>　</h1>
+  <a href="index.html"><p class="bttop">Top Page</p></a>
+  </body>
+
+
+
+</html>

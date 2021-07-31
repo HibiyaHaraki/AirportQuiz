@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta characterset="utf-8">
+  <title>Air Quiz Type 12</title>
+  <link rel="stylesheet" href="../index.css">
+  <script src="../quis.js"></script>
+</head>
+
+<body>
+  <h1>City Name　->　Nation Name</h1>
+  <h3>　</h3>
+  <form autocomplete="off">
+    <h3>以下の選択肢からその都市ある国を選べ!!<br>Choose the Nation including the city below!</h3>
+    <input type="button" value="Generate Question" onclick="gen12()">
+    <h3>　</h3>
+    <h1 id ="QuestionType2" style="padding: 10px; border: 8px solid rgba(47, 241, 183, 0.92);">「Generate Question」を押してね<br>Please push "Generate Question"</h1>
+  <h2></h2>
+  <h1>　</h1>
+    <h3>下から都市を選んで,「Check」を押してね.<br>Choose the correct city name below and push "Check" please.</h3>
+    <div class="option">
+      <table>
+        <tr>
+          <td class="options"><input type="button" id="Option1Button" value="1" onclick="opt1()"></td>
+          <th class="options" id="Option1" style="padding: 8px;">　　　</th>
+        </tr>
+        <tr>
+          <td class="options"><input type="button" id="Option2Button" value="2" onclick="opt2()"></td>
+          <th class="options" id="Option2" style="padding: 8px;">　　　</th>
+        </tr>
+        <tr>
+          <td class="options"><input type="button" id="Option3Button" value="3" onclick="opt3()"></td>
+          <th class="options" id="Option3" style="padding: 8px;">　　　</th>
+        </tr>
+        <tr>
+          <td class="options"><input type="button" id="Option4Button" value="4" onclick="opt4()"></td>
+          <th class="options" id="Option4" style="padding: 8px;">　　　</th>
+        </tr>
+      </table>
+    </div>
+
+
+    <input type="text" id="Ans" value="">
+    <input type="text" name="dummy" style="display:none;">
+    <input type="button" value="Check" onclick="answer()">
+    <h3 id="Bottom"></h3>
+    <video id="Result" style="width: 90%; padding: 10px;" autoplay muted></video>
+    <h3>　</h3>
+    <div class="main">
+      <h1>解答　Answer</h1>
+      <table>
+        <tr>
+          <td>空港名<br>Airport Name</td>
+         <th id="AnsName">　　　</th>
+        </tr>
+        <tr>
+          <td>空港コード<br>Airport Code</td>
+          <th id="AnsCode">　　　</th>
+        </tr>
+        <tr>
+          <td rowspan="2">空港の場所<br>Airport Location</td>
+          <th id="AnsLoc">　　　</th>
+        </tr>
+        <tr>
+          <th><img id="AnsMap" style="width: 30%"></th>
+        </tr>
+      </table>
+    </div>
+    <p>　</p>
+
+    <div class="main">
+      <h1>選択肢例　Options Example</h1>
+      <table>
+        <tr>
+            <td>空港名<br>Airport Name</td>
+            <th id="Option1Name" style="width: 28%;">　　　</th>
+            <th id="Option2Name"  style="width: 28%;">　　　</th>
+            <th id="Option3Name"  style="width: 28%;">　　　</th>
+          </tr>
+          <tr>
+            <td>空港コード<br>Airport Code</td>
+            <th id="Option1Code">　　　</th>
+            <th id="Option2Code">　　　</th>
+            <th id="Option3Code">　　　</th>
+          </tr>
+          <tr>
+            <td rowspan="2">空港の場所<br>Airport Location</td>
+            <th id="Option1Loc">　　　</th>
+            <th id="Option2Loc">　　　</th>
+            <th id="Option3Loc">　　　</th>
+          </tr>
+          <tr>
+            <th><img id="Option1Map" style="width: 90%"></th>
+            <th><img id="Option2Map" style="width: 90%"></th>
+            <th><img id="Option3Map" style="width: 90%"></th>
+          </tr>
+        </table>
+    </div>
+
+    <input type="button" value="Try Again" onclick="gen12()">
+  </form>
+
+  <h1>　</h1>
+  <a href="index.html"><p class="bttop">Top Page</p></a>
+  </body>
+
+
+
+</html>
