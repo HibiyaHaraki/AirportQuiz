@@ -1,0 +1,89 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 100%;
+  color: #eaebca;
+  background: linear-gradient(-35deg,  #002596, #00A0DF);
+  min-height: 800px;
+}
+
+.main table {
+  border: 2px solid;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+}
+
+.main table th {
+  padding: 4px 10px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.main table td {
+  padding: 4px 10px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.option table {
+  text-align: center;
+  margin: auto;
+}
+
+.option th.options {
+  border-bottom: 1px solid;
+}
+
+.option td.options {
+  border-bottom: 1px solid;
+}
+
+.bttop {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  color: rgb(84, 190, 213);
+  border: solid 2px rgb(84, 190, 213);
+}
+
+.bttop:hover {
+  background: rgb(84, 190, 213);
+  color: #eee9dc;
+  border: solid 2px  rgb(57, 149, 246);
+}
+
+a {
+  text-decoration: none;
+  color: #ec8112;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #ec8112;
+  color: #eee9dc;
+}
+
+input {
+   height: 50px;
+   font-size: 40px;
+   text-align: center;
+   margin-top: 20px;
+   /* input要素全部に対して装飾 */
+   background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd); /* グラデーション */
+   border: 1px solid #3c7fb1; /* 枠線 */
+   border-radius: 0.3em;      /* 角丸 */
+}
+input:hover {
+   /* マウスが上に載ったとき */
+   background-image: linear-gradient(0deg, #68d3db, #e5f4fc);
+   border: 1px solid #2c628b;
+}
+input:active {
+   /* 押されたとき */
+   background-image: linear-gradient(180deg, #68d3db, #e5f4fc);
+   border: 1px solid skyblue;
+}
